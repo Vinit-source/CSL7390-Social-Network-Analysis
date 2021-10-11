@@ -1,5 +1,5 @@
-# SNA Programming Assignment 4  
-### Generate Random Graphs:  
+# Network Models
+
 **Q: 1. Write functions to Generate Random Graph with (i) N nodes and L edges and (ii) N and p parameter. (Do not use lib function)**  
 The algorithm that was used for this question takes advantage of batch streaming of edge information while generating the graph. If all the edges are stored in the memory at the same time while adding them to the graph, it leads to memory overflow even on platforms like Google Colab.  
 The following are the random graphs generated for different values of N from both functions.  
@@ -40,6 +40,8 @@ Similar evaluation was performed for `generate_gnp_random` with benchmark algori
 The following results were obtained.  
 ![Evaluation](images/gnp_till_N=1000.png)  
 For the green values for this algorithm, the `generate_gnp_random` function skips those pairs of N and p that have no edges.  
+  
+
 **Q: 2. Generate Random Graph (Using any algorithm) and Scale-Free Graph (using Barabasi-Albert model) of different sizes ranging from N=100 to 10^5/10^6 (based on your machine). Plot their degree distributions, both in usual scale and log-log scale.**  
 N=100:  
 ![dd_100](images/dd_100.png)  
@@ -49,6 +51,8 @@ N=1000:
 ![dd_1000](images/dd_1000.png)  
 N=5000:  
 ![dd_5000](images/dd_5000.png)  
+  
+  
 **Q: 3. Do a structural analysis of a Random Graph and a Scale-Free Graph of moderate size.**  
 The structural analysis for random graph of 1000 nodes is as follows:  
 ```  
