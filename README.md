@@ -20,3 +20,9 @@ This repository contains assignment work from CSL7390-Social-Network-Analysis co
     * Evaluation with benchmarks - networkx algorithms.
     * Generation of scale-free graph.
     * Structural Analysis of both the graphs for similar number of nodes and edges.
+* [Dynamic Influence Maximization](https://colab.research.google.com/drive/1CXzSV5dv8rV-m_RoYdNAZQxgiN8vpSGd#scrollTo=3CodvGqozLoy): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CXzSV5dv8rV-m_RoYdNAZQxgiN8vpSGd#scrollTo=3CodvGqozLoy)
+Studied different algorithms on dynamic influence maximization and found Sieve Streaming to be the most efficient algorithm providing similar accuracy as Greedy. Experiments were performed in the sliding window streaming model.
+    * Greedy algorithm [[Paper](https://dl.acm.org/doi/abs/10.1145/956750.956769)]
+    * Influential Checkpoints [[Paper](https://arxiv.org/abs/1702.01586)]
+    * Sieve Streaming [[Paper](https://dl.acm.org/doi/abs/10.1145/2623330.2623637)]
+    * Random ([Reservoir Sampling](https://www.geeksforgeeks.org/reservoir-sampling/)) 
